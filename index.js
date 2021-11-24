@@ -41,8 +41,8 @@ const EncrypFiles = () =>{
   // INSERT YOUR FOLDER(S)
   // The format of path is > c:/users/users1/documents/project1/assets/js (DO not use back slash \)
   let folders = [
-    //'',
-    //'',
+    'C:/Users/kleyt/Desktop/www/fastsniperbot/app',
+    'C:/Users/kleyt/Desktop/www/fastsniperbot/app/database',
   ]
   let filenames
   let fileContent
@@ -90,6 +90,8 @@ async function Asking() {
   const inputs = await inquirer.prompt(questions);
   if(inputs.tryagain===true){
     EncrypFiles()
+  }else{
+    run()
   }
 }
 async function run() {
