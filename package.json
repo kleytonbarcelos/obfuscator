@@ -1,0 +1,23 @@
+{
+  "name": "obfuscator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.17.1",
+    "inquirer": "^8.2.0",
+    "javascript-obfuscator": "^3.0.0"
+  },
+  "bin" : {
+    "execute" : "index.js"
+  },
+  "scripts": {
+    "exe": "pkg -t node14-win-x64 ./index.js",
+    "start": "nodemon ./index.js",
+    "dev": "node ./index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
